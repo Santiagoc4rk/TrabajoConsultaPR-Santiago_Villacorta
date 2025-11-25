@@ -4,7 +4,7 @@
 
 ---
 
-## 📋 Objetivo
+##  Objetivo
 
 * Aplicar los conocimientos sobre **funciones de orden superior**
 * Enviar funciones como parámetros para resolver **integrales definidas**
@@ -12,25 +12,27 @@
 
 ---
 
-## 📐 Método
+##  Método
 
 El método utilizado es **Simpson 1/3**, cuya fórmula es:
 
-∫ᵇₐ f(x) dx ≈ (b - a) · [f(a) + 4f((a+b)/2) + f(b)] / 6
+$$\int_{a}^{b}f(x)dx \cong (b-a) \frac{f(a)+4f(\bar{x})+f(b)}{6}$$
+
+Donde $\bar{x} = \frac{a+b}{2}$ es el punto medio del intervalo.
 
 ### Puntos de evaluación
 
 El método evalúa la función en tres puntos clave:
 
-1. **Límite inferior**: `a`
-2. **Punto medio**: `(a + b) / 2`
-3. **Límite superior**: `b`
+1. **Límite inferior**: $a$
+2. **Punto medio**: $\bar{x} = \frac{a+b}{2}$
+3. **Límite superior**: $b$
 
 Y los combina según la fórmula de Simpson para obtener una aproximación precisa.
 
 ---
 
-## 💻 Implementación
+##  Implementación
 
 ### Función principal: `integracion`
 ```scala
@@ -53,7 +55,7 @@ Devuelve un `Double`, porque el resultado de una integral es un valor real.
 
 ---
 
-## 🏗️ Estructura del código
+##  Estructura del código
 
 * **`integracion`** → Aplica el método de Simpson 1/3
 * **`f1` a `f7`** → Funciones que representan diferentes integrandos
@@ -62,7 +64,7 @@ Devuelve un `Double`, porque el resultado de una integral es un valor real.
 
 ---
 
-## 🔍 Ejemplo de uso
+##  Ejemplo de uso
 ```scala
 // Definir la función a integrar
 def f1(x: Double): Double = -x * x + 8 * x - 12
@@ -74,13 +76,18 @@ val resultado1 = integracion(f1, 3, 5)
 val error1 = error(7.33, resultado1)
 ```
 
-Para la integral:
+### Ejemplo concreto:
 
-∫₃⁵ (-x² + 8x - 12) dx ≈ 7.33
+Para calcular la integral:
+
+$$\int_{3}^{5}(-x^2 + 8x - 12)dx \approx 7.33$$
+
+**Resultado obtenido**: 7.329  
+**Error**: 0.001
 
 ---
 
-## 📊 Resultados
+##  Resultados
 
 | Integral | Aproximación | Valor esperado | Error |
 |----------|--------------|----------------|-------|
@@ -94,7 +101,7 @@ Para la integral:
 
 ---
 
-## ✅ Conclusiones
+##  Conclusiones
 
 * ✨ **Simpson 1/3** ofrece excelentes aproximaciones usando solo **tres evaluaciones** de la función
 * 🎯 **Scala** permite trabajar de forma clara y elegante con funciones de orden superior
@@ -103,11 +110,8 @@ Para la integral:
 
 ---
 
-## 📚 Referencias
+##  Referencias
 
 * Método de Simpson: Técnica de integración numérica de segundo orden
 * Programación Funcional: Paradigma que trata la computación como evaluación de funciones matemáticas
 
----
-
-*Desarrollado como parte del aprendizaje de Programación Funcional en Scala*
