@@ -41,7 +41,6 @@ def integracion(f: Double => Double, a: Double, b: Double): Double =
   val xBar = (a + b) / 2
   
   // Aplicamos la fórmula de Simpson 1/3
-  // (b-a) * [f(a) + 4*f(punto_medio) + f(b)] / 6
   (b - a) * (f(a) + 4 * f(xBar) + f(b)) / 6
 ```
 
