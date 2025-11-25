@@ -103,10 +103,10 @@ $$\int_{3}^{5}(-x^2 + 8x - 12)dx \approx 7.33$$
 
 ##  Conclusiones
 
-* ✨ **Simpson 1/3** ofrece excelentes aproximaciones usando solo **tres evaluaciones** de la función
-* 🎯 **Scala** permite trabajar de forma clara y elegante con funciones de orden superior
-* 📉 El cálculo del **error** ayuda a comprobar la precisión del método para cada integral
-* 🚀 Este enfoque funcional hace el código más **modular**, **reutilizable** y **fácil de mantener**
+*  **Simpson 1/3** ofrece excelentes aproximaciones usando solo **tres evaluaciones** de la función
+*  **Scala** permite trabajar de forma clara y elegante con funciones de orden superior
+*  El cálculo del **error** ayuda a comprobar la precisión del método para cada integral
+*  Este enfoque funcional hace el código más **modular**, **reutilizable** y **fácil de mantener**
 
 ---
 
