@@ -107,7 +107,7 @@ Para calcular la integral:
 $$\int_{3}^{5}(-x^2 + 8x - 12)dx \approx 7.33$$
 
 **Resultado obtenido**: 7.329  
-**Error**: 0.001
+**Error**: 0.00333
 
 ---
 
